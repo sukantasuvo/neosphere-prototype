@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NeoSphere – Your Mood-Based AI Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to NeoSphere</h1>
+    <p>Select your mood to get your personalized world:</p>
+    <div class="mood-selector">
+      <button onclick="setMood('happy')">😊 Happy</button>
+      <button onclick="setMood('sad')">😢 Sad</button>
+      <button onclick="setMood('anxious')">😟 Anxious</button>
+      <button onclick="setMood('angry')">😠 Angry</button>
+    </div>
+
+    <div id="feed" class="feed-box"></div>
+
+    <h2>🤖 Talk to your AI Friend</h2>
+    <div class="chat-box">
+      <input type="text" id="userInput" placeholder="Say something..." />
+      <button onclick="chat()">Send</button>
+      <div id="chatLog"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
